@@ -1,0 +1,11 @@
+C:\Users\Stefon\documents\visual studio 2015\Projects\ClassLibrary2\ClassLibrary2\bin\Debug\NBarCodesLicense.txt
+C:\Users\Stefon\documents\visual studio 2015\Projects\ClassLibrary2\ClassLibrary2\bin\Debug\Readme.txt
+C:\Users\Stefon\documents\visual studio 2015\Projects\ClassLibrary2\ClassLibrary2\bin\Debug\Barcodes.dll
+C:\Users\Stefon\documents\visual studio 2015\Projects\ClassLibrary2\ClassLibrary2\bin\Debug\Barcodes.pdb
+C:\Users\Stefon\documents\visual studio 2015\Projects\ClassLibrary2\ClassLibrary2\bin\Debug\NBarCodes.dll
+C:\Users\Stefon\documents\visual studio 2015\Projects\ClassLibrary2\ClassLibrary2\bin\Debug\NBarCodes.xml
+C:\Users\Stefon\documents\visual studio 2015\Projects\ClassLibrary2\ClassLibrary2\obj\Debug\Barcodes.csprojResolveAssemblyReference.cache
+C:\Users\Stefon\documents\visual studio 2015\Projects\ClassLibrary2\ClassLibrary2\obj\Debug\Barcodes.Properties.Resources.resources
+C:\Users\Stefon\documents\visual studio 2015\Projects\ClassLibrary2\ClassLibrary2\obj\Debug\Barcodes.csproj.GenerateResource.Cache
+C:\Users\Stefon\documents\visual studio 2015\Projects\ClassLibrary2\ClassLibrary2\obj\Debug\Barcodes.dll
+C:\Users\Stefon\documents\visual studio 2015\Projects\ClassLibrary2\ClassLibrary2\obj\Debug\Barcodes.pdb
