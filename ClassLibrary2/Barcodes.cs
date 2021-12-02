@@ -11,11 +11,18 @@ namespace Barcodes
 {
     public class Image
     {
-        public static System.Drawing.Image UPCA(string data)
+        public static System.Drawing.Image UPCA(string data, Boolean HideFont=false)
         {
+            System.Drawing.Color fontColor = System.Drawing.Color.Black;
+            if (HideFont)
+            {
+                fontColor = System.Drawing.Color.White;
+            }
+
             BarCodeSettings settings = new BarCodeSettings{
                 Type = BarCodeType.Upca,
-                Data = data
+                Data = data,
+                FontColor = fontColor
             };
 
             BarCodeGenerator generator = new BarCodeGenerator(settings);
@@ -25,12 +32,19 @@ namespace Barcodes
             }
         }
 
-        public static System.Drawing.Image UPCE(string data)
+        public static System.Drawing.Image UPCE(string data, Boolean HideFont = false)
         {
+            System.Drawing.Color fontColor = System.Drawing.Color.Black;
+            if (HideFont)
+            {
+                fontColor = System.Drawing.Color.White;
+            }
+
             BarCodeSettings settings = new BarCodeSettings
             {
                 Type = BarCodeType.Upce,
-                Data = data
+                Data = data,
+                FontColor = fontColor
             };
 
             BarCodeGenerator generator = new BarCodeGenerator(settings);
@@ -41,12 +55,19 @@ namespace Barcodes
             }
         }
 
-        public static System.Drawing.Image Code128(string data)
+        public static System.Drawing.Image Code128(string data, Boolean HideFont = false)
         {
+            System.Drawing.Color fontColor = System.Drawing.Color.Black;
+            if (HideFont)
+            {
+                fontColor = System.Drawing.Color.White;
+            }
+
             BarCodeSettings settings = new BarCodeSettings
             {
                 Type = BarCodeType.Code128,
-                Data = data
+                Data = data,
+                FontColor = fontColor
             };
 
             BarCodeGenerator generator = new BarCodeGenerator(settings);
@@ -57,12 +78,19 @@ namespace Barcodes
             }
         }
 
-        public static System.Drawing.Image Code39(string data)
+        public static System.Drawing.Image Code39(string data, Boolean HideFont = false)
         {
+            System.Drawing.Color fontColor = System.Drawing.Color.Black;
+            if (HideFont)
+            {
+                fontColor = System.Drawing.Color.White;
+            }
+
             BarCodeSettings settings = new BarCodeSettings
             {
                 Type = BarCodeType.Code39,
-                Data = data
+                Data = data,
+                FontColor = fontColor
             };
 
             BarCodeGenerator generator = new BarCodeGenerator(settings);
@@ -73,12 +101,19 @@ namespace Barcodes
             }
         }
 
-        public static System.Drawing.Image Interleaved25(string data)
+        public static System.Drawing.Image Interleaved25(string data, Boolean HideFont = false)
         {
+            System.Drawing.Color fontColor = System.Drawing.Color.Black;
+            if (HideFont)
+            {
+                fontColor = System.Drawing.Color.White;
+            }
+
             BarCodeSettings settings = new BarCodeSettings
             {
                 Type = BarCodeType.Interleaved25,
-                Data = data
+                Data = data,
+                FontColor = fontColor
             };
 
             BarCodeGenerator generator = new BarCodeGenerator(settings);
@@ -89,12 +124,19 @@ namespace Barcodes
             }
         }
 
-        public static System.Drawing.Image PostNet(string data)
+        public static System.Drawing.Image PostNet(string data, Boolean HideFont = false)
         {
+            System.Drawing.Color fontColor = System.Drawing.Color.Black;
+            if (HideFont)
+            {
+                fontColor = System.Drawing.Color.White;
+            }
+
             BarCodeSettings settings = new BarCodeSettings
             {
                 Type = BarCodeType.PostNet,
-                Data = data
+                Data = data,
+                FontColor = fontColor
             };
 
             BarCodeGenerator generator = new BarCodeGenerator(settings);
@@ -105,12 +147,19 @@ namespace Barcodes
             }
         }
 
-        public static System.Drawing.Image Standard25(string data)
+        public static System.Drawing.Image Standard25(string data, Boolean HideFont = false)
         {
+            System.Drawing.Color fontColor = System.Drawing.Color.Black;
+            if (HideFont)
+            {
+                fontColor = System.Drawing.Color.White;
+            }
+
             BarCodeSettings settings = new BarCodeSettings
             {
                 Type = BarCodeType.Standard25,
-                Data = data
+                Data = data,
+                FontColor = fontColor
             };
 
             BarCodeGenerator generator = new BarCodeGenerator(settings);
@@ -124,55 +173,62 @@ namespace Barcodes
 
     public class Base64
     {
-        public static string UPCA(string data)
+        public static string UPCA(string data, Boolean HideFont = false)
         {
-            return Convert.ToBase64String(Bytes.UPCA(data));
+            return Convert.ToBase64String(Bytes.UPCA(data, HideFont));
         }
 
-        public static string Code128(string data)
+        public static string Code128(string data, Boolean HideFont = false)
         {
-            return Convert.ToBase64String(Bytes.Code128(data));
+            return Convert.ToBase64String(Bytes.Code128(data, HideFont));
         }
 
-        public static string Ean13(string data)
+        public static string Ean13(string data, Boolean HideFont = false)
         {
-            return Convert.ToBase64String(Bytes.Ean13(data));
+            return Convert.ToBase64String(Bytes.Ean13(data, HideFont));
         }
 
-        public static string Ean8(string data)
+        public static string Ean8(string data, Boolean HideFont = false)
         {
-            return Convert.ToBase64String(Bytes.Ean8(data));
+            return Convert.ToBase64String(Bytes.Ean8(data, HideFont));
         }
 
-        public static string Interleaved25(string data)
+        public static string Interleaved25(string data, Boolean HideFont = false)
         {
-            return Convert.ToBase64String(Bytes.Interleaved25(data));
+            return Convert.ToBase64String(Bytes.Interleaved25(data, HideFont));
         }
 
-        public static string PostNet(string data)
+        public static string PostNet(string data, Boolean HideFont = false)
         {
-            return Convert.ToBase64String(Bytes.PostNet(data));
+            return Convert.ToBase64String(Bytes.PostNet(data, HideFont));
         }
 
-        public static string Standard25(string data)
+        public static string Standard25(string data, Boolean HideFont = false)
         {
-            return Convert.ToBase64String(Bytes.Standard25(data));
+            return Convert.ToBase64String(Bytes.Standard25(data, HideFont));
         }
 
-        public static string UPCE(string data)
+        public static string UPCE(string data, Boolean HideFont = false)
         {
-            return Convert.ToBase64String(Bytes.UPCE(data));
+            return Convert.ToBase64String(Bytes.UPCE(data, HideFont));
         }
     }
 
     public class Bytes
     {
-        public static byte[] Code128(string data)
+        public static byte[] Code128(string data, Boolean HideFont = false)
         {
+            System.Drawing.Color fontColor = System.Drawing.Color.Black;
+            if (HideFont)
+            {
+                fontColor = System.Drawing.Color.White;
+            }
+
             BarCodeSettings settings = new BarCodeSettings
             {
                 Type = BarCodeType.Code128,
-                Data = data, 
+                Data = data,
+                FontColor = fontColor
             };
 
             BarCodeGenerator generator = new BarCodeGenerator(settings);
@@ -187,12 +243,19 @@ namespace Barcodes
             }
         }
 
-        public static byte[] UPCA(string data)
+        public static byte[] UPCA(string data, Boolean HideFont = false)
         {
+            System.Drawing.Color fontColor = System.Drawing.Color.Black;
+            if (HideFont)
+            {
+                fontColor = System.Drawing.Color.White;
+            }
+
             BarCodeSettings settings = new BarCodeSettings
             {
                 Type = BarCodeType.Upca,
-                Data = data
+                Data = data,
+                FontColor = fontColor
             };
 
             BarCodeGenerator generator = new BarCodeGenerator(settings);
@@ -207,12 +270,19 @@ namespace Barcodes
             }
         }
 
-        public static byte[] Ean13(string data)
+        public static byte[] Ean13(string data, Boolean HideFont = false)
         {
+            System.Drawing.Color fontColor = System.Drawing.Color.Black;
+            if (HideFont)
+            {
+                fontColor = System.Drawing.Color.White;
+            }
+
             BarCodeSettings settings = new BarCodeSettings
             {
                 Type = BarCodeType.Ean13,
-                Data = data
+                Data = data,
+                FontColor = fontColor
             };
 
             BarCodeGenerator generator = new BarCodeGenerator(settings);
@@ -227,12 +297,19 @@ namespace Barcodes
             }
         }
 
-        public static byte[] Ean8(string data)
+        public static byte[] Ean8(string data, Boolean HideFont = false)
         {
+            System.Drawing.Color fontColor = System.Drawing.Color.Black;
+            if (HideFont)
+            {
+                fontColor = System.Drawing.Color.White;
+            }
+
             BarCodeSettings settings = new BarCodeSettings
             {
                 Type = BarCodeType.Ean8,
-                Data = data
+                Data = data,
+                FontColor = fontColor
             };
 
             BarCodeGenerator generator = new BarCodeGenerator(settings);
@@ -247,12 +324,19 @@ namespace Barcodes
             }
         }
 
-        public static byte[] Interleaved25(string data)
+        public static byte[] Interleaved25(string data, Boolean HideFont = false)
         {
+            System.Drawing.Color fontColor = System.Drawing.Color.Black;
+            if (HideFont)
+            {
+                fontColor = System.Drawing.Color.White;
+            }
+
             BarCodeSettings settings = new BarCodeSettings
             {
                 Type = BarCodeType.Interleaved25,
-                Data = data
+                Data = data,
+                FontColor = fontColor
             };
 
             BarCodeGenerator generator = new BarCodeGenerator(settings);
@@ -267,12 +351,19 @@ namespace Barcodes
             }
         }
 
-        public static byte[] PostNet(string data)
+        public static byte[] PostNet(string data, Boolean HideFont = false)
         {
+            System.Drawing.Color fontColor = System.Drawing.Color.Black;
+            if (HideFont)
+            {
+                fontColor = System.Drawing.Color.White;
+            }
+
             BarCodeSettings settings = new BarCodeSettings
             {
                 Type = BarCodeType.PostNet,
-                Data = data
+                Data = data,
+                FontColor = fontColor
             };
 
             BarCodeGenerator generator = new BarCodeGenerator(settings);
@@ -287,12 +378,19 @@ namespace Barcodes
             }
         }
 
-        public static byte[] Standard25(string data)
+        public static byte[] Standard25(string data, Boolean HideFont = false)
         {
+            System.Drawing.Color fontColor = System.Drawing.Color.Black;
+            if (HideFont)
+            {
+                fontColor = System.Drawing.Color.White;
+            }
+
             BarCodeSettings settings = new BarCodeSettings
             {
                 Type = BarCodeType.Standard25,
-                Data = data
+                Data = data,
+                FontColor = fontColor
             };
 
             BarCodeGenerator generator = new BarCodeGenerator(settings);
@@ -307,12 +405,20 @@ namespace Barcodes
             }
         }
 
-        public static byte[] UPCE(string data)
+        public static byte[] UPCE(string data, Boolean HideFont = false)
         {
+
+            System.Drawing.Color fontColor = System.Drawing.Color.Black;
+            if (HideFont)
+            {
+                fontColor = System.Drawing.Color.White;
+            }
+
             BarCodeSettings settings = new BarCodeSettings
             {
                 Type = BarCodeType.Upce,
-                Data = data
+                Data = data,
+                FontColor = fontColor
             };
 
             BarCodeGenerator generator = new BarCodeGenerator(settings);
