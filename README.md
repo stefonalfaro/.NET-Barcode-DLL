@@ -5,7 +5,7 @@ This was designed for Microsoft Report Builder to be used as a DLL to provide fu
 This was developed as a wrapper to use with Report Builder so that barcodes can be generated.
 
 
-#Microsoft Report Builder 
+# Microsoft Report Builder 
 You are going to need to add a reference in Report Builder for System.Drawing.dll C:\Windows\Microsoft.NET\Framework\v4.0.30319
 And Barcodes.dll and NBarCodes.dll located in this folder.
 
@@ -41,7 +41,7 @@ Barcodes.Base64.PostNet
 Barcodes.Base64.Interleaved25
 Barcodes.Base64.Standard25
 
-#Fork
+# Fork
 Forked from https://github.com/jordao76/nbarcodes
 NBarCodes is a third party DLL that was decompliled and signed with a strong key name.
 NBarCodes is licenced for commercial use and modification. See NBarCodesLicense.txt
