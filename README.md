@@ -1,7 +1,7 @@
 # Barcodes-DLL--.NET-
 .NET DLL to Generate Barcodes in Bytes, Image, and Base64
 
-This was designed for Microsoft Report Builder to be used as a DLL to provide functionality not currently availabl.
+This was designed for Microsoft Report Builder to be used as a DLL to provide functionality not currently available.
 This was developed as a wrapper to use with Report Builder so that barcodes can be generated.
 
 
