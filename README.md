@@ -20,25 +20,45 @@ Remember that errors will not be shown in Report Builder.
 For example the UPCA requires exactly 12 digits as per specifiction.
 
 Barcodes.Bytes.UPCA
+
 Barcodes.Bytes.UPCE
+
 Barcodes.Bytes.Code128
+
 Barcodes.Bytes.Code39
+
 Barcodes.Bytes.PostNet
+
 Barcodes.Bytes.Interleaved25
+
 Barcodes.Bytes.Standard25
+
 Barcodes.Image.UPCA
+
 Barcodes.Image.UPCE
+
 Barcodes.Image.Code128
+
 Barcodes.Image.Code39
+
 Barcodes.Image.PostNet
+
 Barcodes.Image.Interleaved25
+
 Barcodes.Image.Standard25
+
 Barcodes.Base64.UPCA
+
 Barcodes.Base64.UPCE
+
 Barcodes.Base64.Code128
+
 Barcodes.Base64.Code39
+
 Barcodes.Base64.PostNet
+
 Barcodes.Base64.Interleaved25
+
 Barcodes.Base64.Standard25
 
 # Fork
